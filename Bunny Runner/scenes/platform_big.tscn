@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/platform_big.gd" type="Script" id=1]
+[ext_resource path="res://sprites/Environment/ground_cake.png" type="Texture" id=2]
+
+[node name="platform_big" type="StaticBody2D"]
+
+input_pickable = false
+collision_layer = 2
+collision_mask = 0
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision", "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+texture = 0
+
+[node name="poly" type="CollisionPolygon2D" parent="." index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -160.34, 46.6848, -189.682, -14.0459, -189.816, -33.7881, -179.213, -45.5687, 175.66, -46.4673, 189.504, -36.5785, 189.504, -13.5048, 157.86, 35.939 )
+
+[node name="sprite" type="Sprite" parent="." index="1"]
+
+texture = ExtResource( 2 )
+
+

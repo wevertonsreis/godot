@@ -1,0 +1,292 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/platform_big.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/coil.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/wingman.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scripts/fly_powerup.gd" type="Script" id=6]
+[ext_resource path="res://sprites/Items/powerup_wings.png" type="Texture" id=7]
+[ext_resource path="res://scenes/parallax_blue.tscn" type="PackedScene" id=8]
+
+[sub_resource type="CircleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 10.0
+
+[node name="teste_area" type="Node2D" index="0"]
+
+[node name="player" parent="." index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 117.711, 488.253 )
+collision_mask = 2
+
+[node name="coins" type="Node" parent="." index="1"]
+
+editor/display_folded = true
+
+[node name="coin1" parent="coins" index="0" instance=ExtResource( 2 )]
+
+position = Vector2( 651.136, 538.127 )
+
+[node name="coin2" parent="coins" index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 693.592, 387.9 )
+
+[node name="coin3" parent="coins" index="2" instance=ExtResource( 2 )]
+
+position = Vector2( 788.301, 214.812 )
+
+[node name="coin4" parent="coins" index="3" instance=ExtResource( 2 )]
+
+position = Vector2( 922.199, 77.6473 )
+
+[node name="coin5" parent="coins" index="4" instance=ExtResource( 2 )]
+
+position = Vector2( 1170.4, 80.9131 )
+
+[node name="coin6" parent="coins" index="5" instance=ExtResource( 2 )]
+
+position = Vector2( 1356.55, 214.812 )
+
+[node name="coin7" parent="coins" index="6" instance=ExtResource( 2 )]
+
+position = Vector2( 1532.91, 414.026 )
+
+[node name="coin8" parent="coins" index="7" instance=ExtResource( 2 )]
+
+position = Vector2( 1621.08, 557.722 )
+
+[node name="coin9" parent="coins" index="8" instance=ExtResource( 2 )]
+
+position = Vector2( 2214.01, 504.225 )
+
+[node name="coin10" parent="coins" index="9" instance=ExtResource( 2 )]
+
+position = Vector2( 2267.51, 321.442 )
+
+[node name="coin11" parent="coins" index="10" instance=ExtResource( 2 )]
+
+position = Vector2( 2436.92, 125.286 )
+
+[node name="coin12" parent="coins" index="11" instance=ExtResource( 2 )]
+
+position = Vector2( 2811.4, 125.286 )
+
+[node name="coin13" parent="coins" index="12" instance=ExtResource( 2 )]
+
+position = Vector2( 2994.18, 299.152 )
+
+[node name="coin14" parent="coins" index="13" instance=ExtResource( 2 )]
+
+position = Vector2( 3087.8, 468.56 )
+
+[node name="coin15" parent="coins" index="14" instance=ExtResource( 2 )]
+
+position = Vector2( 3577.06, 644.19 )
+
+[node name="coin16" parent="coins" index="15" instance=ExtResource( 2 )]
+
+position = Vector2( 3899.04, 447.652 )
+
+[node name="coin20" parent="coins" index="16" instance=ExtResource( 2 )]
+
+position = Vector2( 4191.76, 644.19 )
+
+[node name="coin17" parent="coins" index="17" instance=ExtResource( 2 )]
+
+position = Vector2( 4317.21, 447.652 )
+
+[node name="coin18" parent="coins" index="18" instance=ExtResource( 2 )]
+
+position = Vector2( 4543.02, 313.838 )
+
+[node name="coin19" parent="coins" index="19" instance=ExtResource( 2 )]
+
+position = Vector2( 4747.92, 443.47 )
+
+[node name="coin21" parent="coins" index="20" instance=ExtResource( 2 )]
+
+position = Vector2( 5115.91, 447.652 )
+
+[node name="coin22" parent="coins" index="21" instance=ExtResource( 2 )]
+
+position = Vector2( 5396.08, 284.567 )
+
+[node name="coin23" parent="coins" index="22" instance=ExtResource( 2 )]
+
+position = Vector2( 5730.61, 464.378 )
+
+[node name="coin24" parent="coins" index="23" instance=ExtResource( 2 )]
+
+position = Vector2( 6345.32, 623.282 )
+
+[node name="coin25" parent="coins" index="24" instance=ExtResource( 2 )]
+
+position = Vector2( 6583.67, 451.833 )
+
+[node name="coin26" parent="coins" index="25" instance=ExtResource( 2 )]
+
+position = Vector2( 6859.66, 619.1 )
+
+[node name="coin27" parent="coins" index="26" instance=ExtResource( 2 )]
+
+position = Vector2( 7194.2, 439.288 )
+
+[node name="coin28" parent="coins" index="27" instance=ExtResource( 2 )]
+
+position = Vector2( 7574.73, 606.555 )
+
+[node name="coin29" parent="coins" index="28" instance=ExtResource( 2 )]
+
+position = Vector2( 7821.45, 426.743 )
+
+[node name="coin30" parent="coins" index="29" instance=ExtResource( 2 )]
+
+position = Vector2( 8101.62, 606.555 )
+
+[node name="coin31" parent="coins" index="30" instance=ExtResource( 2 )]
+
+position = Vector2( 8461.24, 602.373 )
+
+[node name="platforms" type="Node" parent="." index="2"]
+
+editor/display_folded = true
+
+[node name="platform_big1" parent="platforms" index="0" instance=ExtResource( 3 )]
+
+position = Vector2( 170.36, 777.682 )
+
+[node name="platform_big2" parent="platforms" index="1" instance=ExtResource( 3 )]
+
+position = Vector2( 550.732, 776.517 )
+
+[node name="platform_big3" parent="platforms" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 1707.48, 710.984 )
+
+[node name="platform_big4" parent="platforms" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 2089.2, 710.245 )
+
+[node name="platform_big5" parent="platforms" index="4" instance=ExtResource( 3 )]
+
+position = Vector2( 2621.93, 602.096 )
+
+[node name="platform_big6" parent="platforms" index="5" instance=ExtResource( 3 )]
+
+position = Vector2( 3002.45, 602.096 )
+
+[node name="platform_big7" parent="platforms" index="6" instance=ExtResource( 3 )]
+
+position = Vector2( 3582.01, 775.963 )
+
+[node name="platform_big8" parent="platforms" index="7" instance=ExtResource( 3 )]
+
+position = Vector2( 4197.23, 780.421 )
+
+[node name="platform_big9" parent="platforms" index="8" instance=ExtResource( 3 )]
+
+position = Vector2( 4736.66, 593.18 )
+
+[node name="platform_big10" parent="platforms" index="9" instance=ExtResource( 3 )]
+
+position = Vector2( 5120.06, 593.18 )
+
+[node name="platform_big11" parent="platforms" index="10" instance=ExtResource( 3 )]
+
+position = Vector2( 5757.57, 597.638 )
+
+[node name="platform_big12" parent="platforms" index="11" instance=ExtResource( 3 )]
+
+position = Vector2( 6354.95, 771.505 )
+
+[node name="platform_big13" parent="platforms" index="12" instance=ExtResource( 3 )]
+
+position = Vector2( 8090.34, 758.96 )
+
+[node name="platform_big14" parent="platforms" index="13" instance=ExtResource( 3 )]
+
+position = Vector2( 8479.24, 754.778 )
+
+[node name="platform_big15" parent="platforms" index="14" instance=ExtResource( 3 )]
+
+position = Vector2( 9010.31, 570.785 )
+
+[node name="platform_big16" parent="platforms" index="15" instance=ExtResource( 3 )]
+
+position = Vector2( 9395.02, 570.785 )
+
+[node name="platform_big17" parent="platforms" index="16" instance=ExtResource( 3 )]
+
+position = Vector2( 9771.37, 570.785 )
+
+[node name="platform_big18" parent="platforms" index="17" instance=ExtResource( 3 )]
+
+position = Vector2( 10151.9, 570.785 )
+
+[node name="coils" type="Node" parent="." index="3"]
+
+editor/display_folded = true
+
+[node name="coil1" parent="coils" index="0" instance=ExtResource( 4 )]
+
+position = Vector2( 652.532, 673.7 )
+
+[node name="coil2" parent="coils" index="1" instance=ExtResource( 4 )]
+
+position = Vector2( 2232.63, 606.091 )
+
+[node name="enemies" type="Node" parent="." index="4"]
+
+editor/display_folded = true
+
+[node name="wingman" parent="enemies" index="0" instance=ExtResource( 5 )]
+
+position = Vector2( 2017.09, 583.256 )
+
+[node name="wingman2" parent="enemies" index="1" instance=ExtResource( 5 )]
+
+position = Vector2( 6855.28, 758.886 )
+
+[node name="wingman4" parent="enemies" index="2" instance=ExtResource( 5 )]
+
+position = Vector2( 7587.08, 763.068 )
+
+[node name="wingman5" parent="enemies" index="3" instance=ExtResource( 5 )]
+
+position = Vector2( 9376.83, 432.716 )
+
+[node name="wingman6" parent="enemies" index="4" instance=ExtResource( 5 )]
+
+position = Vector2( 10133.7, 432.716 )
+
+[node name="fly_powerup" type="Area2D" parent="." index="5"]
+
+editor/display_folded = true
+position = Vector2( 2526.29, 447.159 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision_layer = 0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 6 )
+_sections_unfolded = [ "Collision" ]
+
+[node name="sprite" type="Sprite" parent="fly_powerup" index="0"]
+
+texture = ExtResource( 7 )
+
+[node name="shape" type="CollisionShape2D" parent="fly_powerup" index="1"]
+
+scale = Vector2( 2.87333, 2.89504 )
+shape = SubResource( 1 )
+
+[node name="parallax" parent="." index="6" instance=ExtResource( 8 )]
+
+[connection signal="body_entered" from="fly_powerup" to="fly_powerup" method="_on_fly_powerup_body_entered"]
+
+

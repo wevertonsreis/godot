@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/jump.wav-48eba264afb451d05ae5b011f3b62b14.sample"
+
+[deps]
+
+source_file="res://samples/jump.wav"
+source_md5="2f81f799a52e4cd3cb0e0d2e8bc2f2ac"
+
+dest_files=[ "res://.import/jump.wav-48eba264afb451d05ae5b011f3b62b14.sample" ]
+dest_md5="7941c7cf8429b6d45f68178e42bff4ea"
+
+[params]
+
+force/8_bit=true
+force/mono=true
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
